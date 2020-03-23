@@ -1,0 +1,66 @@
+//================> Blur
+.blur {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.24);
+	z-index: 1000;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	overflow-y: scroll;
+	& > {
+		cursor: pointer !important;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+//================> Popups
+.popup {
+    opacity: 0;    
+    transition: 0.2s;
+	visibility: hidden;
+	display: none;
+    &.active {
+		display: flex;
+		flex-direction: column;	
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+.modal-1 {
+    width: 822px;
+    padding: 40px 45px;
+    background: #FFFFFF;
+    border-radius: 2px;
+	position: absolute;
+	box-sizing: border-box;
+    margin: 50px 0;
+}
+
+.modal-2 {
+    width: 420px;
+    padding: 35px 50px;
+    background: #FFFFFF;
+    border-radius: 2px;
+	position: absolute;
+	box-sizing: border-box;
+    margin: 50px 0;
+}
+
+
+
