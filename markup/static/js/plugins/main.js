@@ -6,6 +6,7 @@ $(document).ready(function () {
 	var swiper = new Swiper('.first-slider', {
 		spaceBetween: 30,
 		speed: 1000,
+		parallax: true,
 		navigation: {
 			nextEl: '.first-prev',
 			prevEl: '.first-next',
