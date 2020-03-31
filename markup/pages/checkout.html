@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head head.defaults}}
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    {{> header/header}}
+    <div class="basket">
+        {{> bread/bread}}
+
+        <div class="basket__container">
+            <div class="wrapper">
+                <div class="basket__top">
+                    Оформление заказа
+                </div>
+                <div class="basket__content">
+
+                    <form action="#" class="basket__left basket__form">
+                        <div class="basket__form-title">
+                                Ваш город
+                        </div>
+                        <div class="city basket__caption">
+                            <div class="city__field">
+                                Санкт-Петербург
+                                <a href="#">другой город</a>
+                            </div>
+                        </div>       
+
+                        
+                        <div class="delivery basket__caption">
+                            <div class="basket__form-title">
+                                    Способ доставки
+                            </div>
+                            <div class="delivery__items">
+                                <label class="delivery__item">
+                                    <input type="checkbox">
+                                    <div class="delivery__container">
+                                        <div class="delivery__img">
+                                            <img src='static/img/content/pay-1.png'>                                            
+                                        </div>
+                                        <div class="delivery__title">
+                                                Доставка курьером Boxberry <span>7-14 дней</span>
+                                        </div>    
+                                        <div class="delivery__price">
+                                                500 ₽
+                                        </div>
+                                    </div>
+
+                                </label>
+                                <label class="delivery__item">
+                                    <input type="checkbox">
+                                    <div class="delivery__container">
+                                        <div class="delivery__img">
+                                            <img src='static/img/content/pay-1.png'>                                            
+                                        </div>
+                                        <div class="delivery__title">
+                                                Доставка курьером Boxberry <span>7-14 дней</span>
+                                        </div>    
+                                        <div class="delivery__price">
+                                                500 ₽
+                                        </div>
+                                    </div>
+
+                                </label>
+                            </div>
+                        </div>                 
+                        
+                        <div class="basket__caption">
+                            <div class="basket__form-title">
+                                Способ оплаты
+                            </div>
+                            <label class="pay__items">
+                                <input type="radio" checked>
+                                <div class="pay__item">
+                                    <div class="pay__title">
+                                            Оплата онлайн
+                                    </div>
+                                    <div class="pay__desc">
+                                        Банковской картой или электронными деньгами
+                                    </div>
+                                    <div class="pay__imgs">
+                                        <img src='static/img/content/visa.png'>
+                                        <img src='static/img/content/mastercard.png'>
+                                        <img src='static/img/content/mir.png'>
+                                        <img src='static/img/content/yandex.png'>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="basket__caption">
+                            <div class="basket__form-title">
+                                    Данные получателя
+                            </div>
+                            <div class="data">
+                                <div class="data__item">
+                                    <div class="data__title required">
+                                            Телефон
+                                    </div>
+                                    <input type="text" class="m-field data__field phone-mask" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="data__item">
+                                    <div class="data__title required">
+                                            Электронная почта
+                                    </div>
+                                    <input type="text" class="m-field data__field" placeholder="alixandr@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+
+                    <div class="basket__right">
+                        <div class="basket__sidebar">
+                            <div class="basket__sidebar-top">
+                                <div class="basket__sidebar-item">
+                                        Товары (3) <span>3 600 ₽</span>
+                                </div>                                
+                                <div class="basket__sidebar-item">
+                                        Подарки (4) <span class="purp">Бесплатно</span>
+                                </div>                                
+                                <div class="basket__sidebar-item-2">
+                                        Скидка <span>-400 ₽</span>
+                                </div>                                
+                                <div class="basket__sidebar-item">
+                                        Доставка «Почта России» <span>500 ₽</span>
+                                </div>                                
+                            </div>
+
+                            <div class="basket__sidebar-bottom">
+                                <div class="basket__sidebar-itogo">
+                                    <span>Итог:</span>
+                                    <span>3 700 ₽</span>
+                                </div>
+                                <div class="m-button-2">Оформить заказ</div>
+                                <div class="basket__sidebar-desc">
+                                        Оформляя заказ, я соглашаюсь с пользовательским соглашением, политикой конфиденциальности и даю согласие на обработку данных
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="next-slider">
+        <div class="wrapper">
+            <div class="next-slider__container">
+                <div class="next-slider__top">
+                        Ранее вы смотрели
+                </div>
+                <div class="next-slider__content">
+                    <div class="next-slider__button next-slider__button-prev next-prev">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__button next-slider__button-next next-next">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    {{> footer/footer}}
+
+</body>
+</html>
