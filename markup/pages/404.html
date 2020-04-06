@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head head.defaults}}
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+
+    <div class="e404">
+        <div class="e404__bg m-bg-cont">
+            <img src='static/img/content/e404-bg.png'>
+        </div>
+        <div class="wrapper">
+            <div class="e404__container">
+                <div class="e404__top">
+                    404
+                </div>
+                <div class="e404__title">
+                    К сожалению, страница не найдена
+                </div>
+                <div class="e404__desc">
+                    Зато вы можете пойти на <a href="#">главную страницу</a> и прочитать <a href="#">о проекте</a> или создать <a href="#">свою крутую одежду</a>.
+                    Или посмотрите <a href="#">каталог</a> с нашими последними изделиями.
+                </div>
+                <a href="index.html" class="m-button-2">На главную</a>
+            </div>
+        </div>
+        <div class="e404__bottom">
+            <div class="wrapper">
+                <span>© 2020 Все права защищены</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{> scripts/scripts}}
+
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head head.defaults}}
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    {{> header/header}}
+
+    {{> bread/bread}}
+
+    <div class="tovar">
+        <div class="wrapper">
+            <div class="tovar__container">
+                
+                <div class="tovar__left">
+                    <div class="tovar__top-container">
+                        <div class="tovar__top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                                <div class="swiper-slide m-bg-cont">
+                                    <img src='static/img/content/tovar-img-1.jpg'>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tovar__right tovar__right-2">
+                    
+
+                    <div class="tovar__size">
+                        <div class="tovar__size-top">
+                            <div class="tovar__title">
+                                Размер: <a href="#">Как подобрать размер</a>
+                            </div>
+                        </div>
+                        <div class="tovar__size-content">
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                    XS
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        S
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        M
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        L
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        XL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        XXL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        XXXL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        4XL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        5XL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        6XL
+                                </div>
+                            </label>
+                            <label class="tovar__size-item">
+                                <input type="radio" name="1s">
+                                <div>
+                                        7XL
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="tovar__price">
+                        <div class="tovar__price-active">
+                                1200 ₽
+                        </div>
+                        <div class="tovar__price-old">1600 ₽</div>
+                    </div>
+
+                    <div class="tovar__count">
+                        <div class="tovar__title">
+                                Количество:
+                        </div>
+                        <div class="number-input-container">
+                            <button type="button" class="number-input-button number-decrement">
+                                {{Icon iconName="minus"}}
+                            </button>
+                            <div class="number-result">1</div>
+                            <input type="number" class="number-input" step="1" value="1" min="1" max="10">
+                            <button type="button" class="number-input-button number-increment">
+                                {{Icon iconName="plus"}}
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="tovar__deliv">
+                        <div class="tovar__deliv-top">
+                                Доставка в Санкт-Петербург от <span>500 ₽</span>
+                        </div>
+
+                        <div class="tovar__deliv-desc">
+                                Осуществялется в течении 7-14 дней рабочих дней службой <a href="#">boxberry</a>
+                        </div>
+
+                    </div>
+
+                    <div class="tovar__bottom">
+                        <div class="tovar__button m-button-2">
+                            {{Icon iconName="header-basket"}}
+                                Добавить в корзину
+                        </div>
+
+                        <a href="#">{{Icon iconName="header-like"}}</a>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="tvrbottom">
+        <div class="wrapper">
+            <div class="tvrbottom__container">
+                <div class="tvrbottom__item">
+                    <div class="tvrbottom__img">
+                        <img src='static/img/content/tvrbottom-1.jpg'>
+                    </div>
+                    <div class="tvrbottom__desc">
+                        Мы вынуждены отталкиваться от того, что консультация с широким активом прекрасно подходит для реализации распределения внутренних резервов и ресурсов. Принимая во внимание показатели успешности, новая модель организационной деятельности однозначно фиксирует необходимость приоритизации разума над эмоциями.
+                    </div>
+                </div>
+                <div class="tvrbottom__item">
+                    <div class="tvrbottom__img">
+                        <img src='static/img/content/tvrbottom-2.jpg'>
+                    </div>
+                    <div class="tvrbottom__desc">
+                        Предприниматели в сети интернет, превозмогая сложившуюся непростую экономическую ситуацию, обнародованы. Приятно, граждане, наблюдать, как стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, функционально разнесены на независимые элементы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-slider">
+        <div class="wrapper">
+            <div class="next-slider__container-1">
+                <div class="next-slider__top">
+                    <img src='static/img/content/heart.png'>
+                        Ранее вы смотрели
+                </div>
+                <div class="next-slider__content">
+                    <div class="next-slider__button next-prev-1 next-slider__button-prev next-prev">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__button next-next-1 next-slider__button-next next-next">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__slider next-slider__slider-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-slider">
+        <div class="wrapper">
+            <div class="next-slider__container-1">
+                <div class="next-slider__top">
+                    <img src='static/img/content/eye.png'>
+                        Ранее вы смотрели
+                </div>
+                <div class="next-slider__content">
+                    <div class="next-slider__button next-prev-2 next-slider__button-prev next-prev">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__button next-next-2 next-slider__button-next next-next">
+                        {{Icon iconName="next-arrow"}}
+                    </div>
+                    <div class="next-slider__slider next-slider__slider-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="ctg__item">
+                                    <div class="ctg__item-img">
+                                        <div class="m-bg-cont">
+                                            <img src='static/img/content/ctg-1.jpg'>
+                                        </div>
+                                    </div>
+                                    <div class="ctg__item-bottom">
+                                        <div class="ctg__item-article">
+                                                564414
+                                        </div>
+                                        <div class="ctg__item-price">
+                                                940 ₽
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glr">
+        <div class="wrapper">
+            <div class="glr__container">
+                <div class="glr__top">
+                    <div class="glr__title">
+                        {{Icon iconName="inst"}}
+                            Галерея образов
+                    </div>
+                    <div class="glr__desc">
+                            Размещай фото в Instagram с хэштегом <a href="#">#ColorTheWorld</a> находи свои образы в Галерее!
+                    </div>
+                    <a href="#" class="glr__link">
+                            Наш инстаграм {{Icon iconName="glt-arrw"}}
+                    </a>
+                </div>
+                <div class="glr__container glr-slider">
+                    <div class="swiper-wrapper lightgallery">
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                        <a href="static/img/content/glr-img-1.jpg" class="swiper-slide glr__slide">
+                            <div class="m-bg-cont">
+                                <img src='static/img/content/glr-img-1.jpg'>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="glr__bottom">
+                        Стоимость подписки составляет 199 рублей в месяц по окончании пробного периода. Отменить подписку можно в любой момент. Подписка продлевается автоматически до момента отмены. <br>
+                        Стоимость индивидуальной подписки составляет 169 рублей в месяц по окончании пробного периода. Отменить подписку можно в любой момент. По окончании пробного периода подписка продлевается автоматически до момента отмены. <br>
+                        Официально лицензированная продукция United States Women’s National Team Players Association © 2020 г.  <br>
+                        © NHL <br>
+                        Стоимость подписки Apple TV+ составляет 199 рублей в месяц по окончании пробного периода. Единая подписка на группу Семейного доступа. Предложение действительно в течение 3 месяцев после активации соответствующего устройства. Подписка продлевается автоматически до момента отмены. Имеются определённые ограничения и другие условия.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-out"></div>
+
+    {{> footer/footer}}
+
+</body>
+</html>

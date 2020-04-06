@@ -46,28 +46,28 @@
                             <a href="tel:+74750319999" class="contact__link">+7 (475) 031-99-99</a>
                         </div>
                     </div>
-                    <div class="contact__form">
+                    <form action="#" class="contact__form form">
                         <div class="contact__form-title">
                             Написать нам
                         </div>
                         <div class="contact__form-content">
-                            <input type="text" class="m-field" placeholder="Ваше сообщение">
-                            <input type="text" class="m-field" placeholder="Ваше сообщение">
-                            <textarea name="" id="" cols="30" rows="10" class="m-textarea" placeholder="Сообщение"></textarea>
+                            <input type="text" name="name" class="m-field" placeholder="Ваше имя">
+                            <input type="email" name="email" class="m-field" placeholder="Электронная почта">
+                            <textarea name="message" id="" cols="30" rows="10" class="m-textarea" placeholder="Сообщение"></textarea>
                             <div class="contact__bottom">
                                 <label class="m-check">
-                                    <input type="checkbox">
+                                    <input type="checkbox" required name="check">
                                     <div>
                                         {{Icon iconName="check"}}
                                     </div>
                                     <p>Я принимаю условия Политики конфиденциальности, Публичной <br> оферты и даю своё согласие</p>
                                 </label>
-                                <div class="m-button-2">
+                                <button class="m-button-2">
                                         Отправить
-                                </div>
+                                </button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
