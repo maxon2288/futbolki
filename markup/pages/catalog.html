@@ -83,6 +83,12 @@
                         <a href="#" class="ctg__link">Детские</a>
                     </div>
 
+                    <div class="ctg__search">
+                        <input type="text" class="ctg__field" placeholder="Укажите тематику, например абстракция">
+                        <button class="m-button-2">Найти</button>
+                    </div>
+
+
                     <div class="ctg__items">
                         <a href="#" class="ctg__item">
                             <div class="ctg__item-img">
@@ -248,9 +254,12 @@
             </div>
             <div class="sidebar">
                 <div class="sidebar__container sticky-block">
-                    <div class="sidebar__top">
-                        <img src='static/img/content/sidebar-banner.jpg'>
-                    </div>
+                    <a href="edit.html" class="page__banner">
+                        <img src="static/img/content/banner.png">
+                        <div class="page__banner-title">
+                            Создать свой <br> дизайн
+                        </div>
+                    </a>
 
                     <div class="sidebar__filter">
                         {{Icon iconName="header-catalog"}}
@@ -259,7 +268,7 @@
                     <div class="sidebar__item-container">
                         <div class="sidebar__item">
                             <div class="sidebar__title">
-                                    Тип одежды
+                                Тип товара
                             </div>
                             <label class="m-check">
                                 <input type="checkbox">
@@ -281,6 +290,13 @@
                                     {{Icon iconName="check"}}
                                 </div>
                                 <p>Худи </p>
+                            </label>
+                            <label class="m-check">
+                                <input type="checkbox">
+                                <div>
+                                    {{Icon iconName="check"}}
+                                </div>
+                                <p>Сумки </p>
                             </label>
                         </div>
                         

@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$("body").css({'visibility': "visible", "opacity": "1"});
 	// forms();
 
-	var swiper = new Swiper('.first-slider', {
+	var swiper1 = new Swiper('.first-slider', {
 		spaceBetween: 30,
 		speed: 1000,
 		parallax: true,
@@ -15,7 +15,7 @@ $(document).ready(function () {
 			el: '.first-pagination',
 		},
 	});
-	var swiper = new Swiper('.next-basket-slider', {
+	var swiper2 = new Swiper('.next-basket-slider', {
 		spaceBetween: 40,
 		speed: 300,
 		parallax: true,
@@ -33,14 +33,10 @@ $(document).ready(function () {
 			1023: {
 				slidesPerView: 2,
 			},
-			599: {
-				slidesPerView: 1,
-				spaceBetween: 20,
-			},
 		}
 	});
 
-	var swiper = new Swiper('.glr-slider', {
+	var swiper3 = new Swiper('.glr-slider', {
 		spaceBetween: 50,
 		speed: 300,
 		loop: true,
@@ -61,32 +57,72 @@ $(document).ready(function () {
 		}
 	});
 
-	for (var i = 1; i <= $(".next-slider__slider").length; i++) {
-		var elem = '.next-slider__slider-' + i;
-		var elemPrev = '.next-prev-' + i;
-		var elemNext = '.next-next-' + i;
-		console.log(elem)
-		console.log(elemPrev)
-		console.log(elemNext)
-		var hodslider = new Swiper(elem, {
-			spaceBetween: 30,
-			navigation: {
-				nextEl: elemNext,
-				prevEl: elemPrev,
+	var swiper3 = new Swiper('.next-slider__slider-1', {
+				slidesPerView: 2,
+				spaceBetween: 30,
+		navigation: {
+			nextEl: ".next-next-1",
+			prevEl: ".next-prev-1",
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 4,
 			},
-			breakpoints: {
-				1024: {
-					slidesPerView: 4,
-				},
-				767: {
-					slidesPerView: 2,
-				},
-				425: {
-					slidesPerView: 1,
-				},
+			767: {
+				slidesPerView: 2,
 			},
-		});
-	}
+			425: {
+				slidesPerView: 2,
+			},
+		},
+	});
+
+	var swiper3 = new Swiper('.next-slider__slider-2', {
+				slidesPerView: 2,
+				spaceBetween: 30,
+		navigation: {
+			nextEl: ".next-next-2",
+			prevEl: ".next-prev-2",
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 4,
+			},
+			767: {
+				slidesPerView: 2,
+			},
+			425: {
+				slidesPerView: 2,
+			},
+		},
+	});
+
+	// for (var i = 1; i <= $(".next-slider__slider").length; i++) {
+	// 	var elem = '.next-slider__slider-' + i;
+	// 	var elemPrev = '.next-prev-' + i;
+	// 	var elemNext = '.next-next-' + i;
+	// 	console.log(elem)
+	// 	console.log(elemPrev)
+	// 	console.log(elemNext)
+	// 	var swiperSliderfor = new Swiper(elem, {
+	// 		spaceBetween: 30,
+	// 		navigation: {
+	// 			nextEl: elemNext,
+	// 			prevEl: elemPrev,
+	// 		},
+	// 		breakpoints: {
+	// 			1024: {
+	// 				slidesPerView: 4,
+	// 			},
+	// 			767: {
+	// 				slidesPerView: 2,
+	// 			},
+	// 			425: {
+	// 				slidesPerView: 3,
+	// 			},
+	// 		},
+	// 	});
+	// }
 
 	$(".basket__color-item").each(function() {
 		$(this).find("div").css("background-color", $(this).data("color"));
@@ -184,13 +220,9 @@ $(document).ready(function () {
 		$(this).closest(".number-input-container").find(".number-result").text($input.val());
 	});
 
-	// $(".header__mobile").click(function() {
-	// 	$(".header__mobile-menu, .blur").addClass("active");
-	// });
-	// $(".header__close, .blur").click(function() {
-	// 	$(".header__mobile-menu, .blur").removeClass("active")
-
-	// });
+	$(".header__mobile").click(function() {
+		$(".header__mobile-menu, .blur").addClass("active");
+	});
 	
 	
 	$(".tabs").each(function() {
@@ -202,9 +234,9 @@ $(document).ready(function () {
 			it.addClass("active");
 			$(".cont-tab").removeClass("active");
 			$("." + href).each(function () {
-				it.closest(".tabs-container").find("." + href).addClass('active');
-				it.closest('.tabs-container').find("." + href + " input").val('');
-				it.closest('.tabs-container').find("." + href + " input").removeClass("is-focus");
+				it.closest(".tabs").find("." + href).addClass('active');
+				it.closest('.tabs').find("." + href + " input").val('');
+				it.closest('.tabs').find("." + href + " input").removeClass("is-focus");
 			});
 		});
 	});
@@ -392,22 +424,23 @@ $(document).ready(function () {
 		$('.popup').removeClass('active');
     	$('.popup-'+popup).addClass('active');
     });
-    // $('body').on('mousedown','.blur',function(e) { //Закрытие попапов по .blur
-    // 	if (this == e.target) {
-    // 		$('.popup').removeClass('active');
-    // 		$('html').removeClass('no-scroll');
-    // 		$('body').css('width','auto');
-	// 		$('.blur').removeClass('active');
-	// 		$('.popup').each(function() {
-	// 			$(this).find('input[type=text],input[type=mail],textarea').val('');
-	// 			$(this).find('input[type=checkbox]').prop('checked', false);
-	// 			$(this).find('.active').removeClass('active');
-	// 		});
-	// 		$(".header__right").removeClass("active");
-	// 		$(".catalog__sidebar-container").removeClass('active');
+    $('body').on('mousedown','.blur',function(e) { //Закрытие попапов по .blur
+    	if (this == e.target) {
+    		$('.popup').removeClass('active');
+    		$('html').removeClass('no-scroll');
+    		$('body').css('width','auto');
+			$('.blur').removeClass('active');
+			$('.popup').each(function() {
+				$(this).find('input[type=text],input[type=mail],textarea').val('');
+				$(this).find('input[type=checkbox]').prop('checked', false);
+				$(this).find('.active').removeClass('active');
+			});
+			$(".header__right").removeClass("active");
+			$(".catalog__sidebar-container").removeClass('active');
+			$(".header__mobile-menu").removeClass('active');
 
-    // 	}
-	// });
+    	}
+	});
 	
     $('body').on('click','.popup__close',function(e) { //Закрытие попапов по .popup__close
 		$('.popup').removeClass('active');
@@ -419,13 +452,17 @@ $(document).ready(function () {
 			$(this).find('input[type=checkbox]').prop('checked', false);
 			$(this).find('.active').removeClass('active');
 		});
+		$(".header__mobile-menu").removeClass('active');
 	});
 
-
+	$(".open-upload-button, .upload-otmena").click(function() {
+		$(this).closest(".bill-doc").find(".open-upload").toggleClass("visible");
+		
+	});
 	
 	var galleryThumbs = new Swiper('.tovar__slider-thumb', {
 		spaceBetween: 24,
-		slidesPerView: 6,
+		slidesPerView: "auto",
 		freeMode: true,
 		direction: "column",
 		watchSlidesVisibility: true,
@@ -438,9 +475,14 @@ $(document).ready(function () {
 		  nextEl: '.swiper-button-next',
 		  prevEl: '.swiper-button-prev',
 		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
 		thumbs: {
 		  swiper: galleryThumbs
 		}
 	  });
+
 	
 })
