@@ -3199,7 +3199,8 @@ $(document).ready(function () {
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 
-	$('.tovar__like').on('click', function () {
+	$('.tovar__like').on('click', function (e) {
+		e.preventDefault();
 		$(this).toggleClass('active');
 	});
 	
