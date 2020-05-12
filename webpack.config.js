@@ -3,10 +3,10 @@
 const path = require('path');
 const cwd = process.cwd();
 const webpack = tars.require('webpack');
-const UglifyJsPlugin = tars.require('uglifyjs-webpack-plugin');
+const TerserJsPlugin = tars.require('terser-webpack-plugin');
 
 const staticFolderName = tars.config.fs.staticFolderName;
-const compressJs = tars.flags.release || tars.flags.min;
+const compressJs = tars.flags.release || tars.flags.min || tars.flags.m;
 const generateSourceMaps = tars.config.sourcemaps.js.active && tars.isDevMode;
 const sourceMapsDest = tars.config.sourcemaps.js.inline ? 'inline-' : '';
 const sourceMapsType = `#${sourceMapsDest}source-map`;
@@ -37,8 +37,8 @@ if (process.env.npmRoot) {
 if (compressJs) {
     outputFileNameTemplate += `${tars.options.build.hash}.min`;
     minimizers.push(
-        new UglifyJsPlugin({
-            uglifyOptions: {
+        new TerserJsPlugin({
+            terserOptions: {
                 compress: {
                     /* eslint-disable camelcase */
                     drop_console: tars.config.js.removeConsoleLog,
@@ -124,7 +124,7 @@ module.exports = {
     }),
 
     output: {
-        path: path.resolve(`${cwd}/dev/${staticFolderName}/js`),
+        path: path.resolve(`${(tars.isDevMode) ? `${tars.config.devPath}` : `${tars.options.build.path}`}/${staticFolderName}/js`),
         publicPath: `./${staticFolderName}/js/`,
         filename: `${outputFileNameTemplate}.js`
     },

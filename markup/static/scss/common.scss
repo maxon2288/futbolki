@@ -2918,7 +2918,7 @@ a {
         }
     }
     
-    .basket-size-slider {
+    .basket-size-slider, .basket-size-slider-2, .basket-size-slider-3 {
         overflow: hidden;
         .swiper-slide {
             width: auto;
@@ -3832,11 +3832,31 @@ a {
         }
         &:hover {
             svg {
-                fill:#FF5927
+                fill:#FF5927;
             }
             .tovar-tab__title {
                 color: #FF5927 !important;
             }
         }
+        &.active {
+            svg {
+                fill:#FF5927;
+            }
+            & .tovar-tab__title {
+                color: #FF5927 !important;
+            }
+        }
     }
 }
+
+.tovar__like.active {
+    & svg {
+        fill: #9CA4B1;
+    }
+}
+
+// #header-like {
+//     &.active {
+//         fill: #9CA4B1;
+//     }
+// }
