@@ -10744,15 +10744,15 @@ a {
   }
 }
 
-.basket .basket-size-slider {
+.basket .basket-size-slider, .basket .basket-size-slider-2, .basket .basket-size-slider-3 {
   overflow: hidden;
 }
 
-.basket .basket-size-slider .swiper-slide {
+.basket .basket-size-slider .swiper-slide, .basket .basket-size-slider-2 .swiper-slide, .basket .basket-size-slider-3 .swiper-slide {
   width: auto;
 }
 
-.basket .basket-size-slider .swiper-slide label {
+.basket .basket-size-slider .swiper-slide label, .basket .basket-size-slider-2 .swiper-slide label, .basket .basket-size-slider-3 .swiper-slide label {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -10760,7 +10760,7 @@ a {
   color: #63686F;
 }
 
-.basket .basket-size-slider .swiper-slide label div {
+.basket .basket-size-slider .swiper-slide label div, .basket .basket-size-slider-2 .swiper-slide label div, .basket .basket-size-slider-3 .swiper-slide label div {
   border: 1px solid #D9DDE4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10782,11 +10782,11 @@ a {
   cursor: pointer;
 }
 
-.basket .basket-size-slider .swiper-slide label input {
+.basket .basket-size-slider .swiper-slide label input, .basket .basket-size-slider-2 .swiper-slide label input, .basket .basket-size-slider-3 .swiper-slide label input {
   display: none;
 }
 
-.basket .basket-size-slider .swiper-slide label input:checked ~ div {
+.basket .basket-size-slider .swiper-slide label input:checked ~ div, .basket .basket-size-slider-2 .swiper-slide label input:checked ~ div, .basket .basket-size-slider-3 .swiper-slide label input:checked ~ div {
   background: rgba(71, 90, 255, 0.1);
   border: 1px solid #475AFF;
   color: #475AFF;
@@ -12016,6 +12016,18 @@ a {
   color: #FF5927 !important;
 }
 
+.tovar-tab__link.active svg {
+  fill: #FF5927;
+}
+
+.tovar-tab__link.active .tovar-tab__title {
+  color: #FF5927 !important;
+}
+
+.tovar__like.active svg {
+  fill: #9CA4B1;
+}
+
 .pageNavFixed {
   position: fixed;
   z-index: 1500;
@@ -12408,3 +12420,5 @@ a {
     width: calc(100% - 40px);
   }
 }
+
+/*# sourceMappingURL=main.css.map */
