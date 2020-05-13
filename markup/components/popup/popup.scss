@@ -245,6 +245,20 @@
 		margin-top: 20px;
 		width: calc(100% - 40px);
 	}
+	& .m-field {
+		&::-webkit-input-placeholder {
+			line-height: 56px;
+		}
+		&::-moz-placeholder {
+				line-height: 56px;
+		}
+		&:-moz-placeholder {
+				line-height: 56px;
+		}
+		&:-ms-input-placeholder {
+				line-height: 56px;
+		}
+	}
 }
 
 

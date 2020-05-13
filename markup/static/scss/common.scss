@@ -734,6 +734,7 @@ a {
         }
     }
     &__title-white {
+        max-width: 490px;
         font-style: normal;
         font-weight: bold;
         font-size: 60px;
@@ -1525,6 +1526,9 @@ a {
             text-decoration: underline;
         }
     }
+    &__adress {
+        max-width: 300px;
+    }
     
 }
 
@@ -1929,6 +1933,7 @@ a {
             }
         }
         &-title {
+            max-width: 650px;
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
@@ -2108,6 +2113,14 @@ a {
         }
     }
 }
+.td-width {
+    max-width: 200px;
+    & span {
+        max-width: 200px;
+        display: inline-block;
+        white-space: normal;
+    }
+}
 .page {
     &__container {
         @media screen and (max-width: 1279px) {
@@ -2207,6 +2220,18 @@ a {
             }
             .m-field {
                 width: calc(50% - 10px);
+                &::-webkit-input-placeholder {
+                    line-height: 56px;
+                }
+                &::-moz-placeholder {
+                    line-height: 56px;
+                }
+                &:-moz-placeholder {
+                    line-height: 56px;
+                }
+                &:-ms-input-placeholder {
+                    line-height: 56px;
+                }
                 @media screen and (max-width: 599px) {
                     width: 100%;
                 }
@@ -3179,6 +3204,18 @@ a {
         .m-field {
             width: 100%;
             max-width: 100%;
+            &::-webkit-input-placeholder {
+                line-height: 56px;
+            }
+            &::-moz-placeholder {
+                line-height: 56px;
+            }
+            &:-moz-placeholder {
+                line-height: 56px;
+            }
+            &:-ms-input-placeholder {
+                line-height: 56px;
+            }
         }
         @media screen and (max-width: 599px) {
             width: 100%;
