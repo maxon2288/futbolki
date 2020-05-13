@@ -7577,6 +7577,7 @@ a {
 }
 
 .first__title-white {
+  max-width: 490px;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -8733,6 +8734,10 @@ a {
   text-decoration: underline;
 }
 
+.footer__adress {
+  max-width: 300px;
+}
+
 .block__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9337,6 +9342,7 @@ a {
 }
 
 .page__banner-title {
+  max-width: 650px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -9531,6 +9537,16 @@ a {
   border-bottom: 1px solid #D9DDE4;
 }
 
+.td-width {
+  max-width: 200px;
+}
+
+.td-width span {
+  max-width: 200px;
+  display: inline-block;
+  white-space: normal;
+}
+
 @media screen and (max-width: 1279px) {
   .page__container {
     -webkit-box-orient: vertical;
@@ -9691,6 +9707,22 @@ a {
 
 .contact__form-content .m-field, .contact__form-content .m-textarea {
   width: calc(50% - 10px);
+}
+
+.contact__form-content .m-field::-webkit-input-placeholder, .contact__form-content .m-textarea::-webkit-input-placeholder {
+  line-height: 56px;
+}
+
+.contact__form-content .m-field::-moz-placeholder, .contact__form-content .m-textarea::-moz-placeholder {
+  line-height: 56px;
+}
+
+.contact__form-content .m-field:-moz-placeholder, .contact__form-content .m-textarea:-moz-placeholder {
+  line-height: 56px;
+}
+
+.contact__form-content .m-field:-ms-input-placeholder, .contact__form-content .m-textarea:-ms-input-placeholder {
+  line-height: 56px;
 }
 
 @media screen and (max-width: 599px) {
@@ -11113,6 +11145,22 @@ a {
   max-width: 100%;
 }
 
+.data__item .m-field::-webkit-input-placeholder, .data__item .m-textarea::-webkit-input-placeholder {
+  line-height: 56px;
+}
+
+.data__item .m-field::-moz-placeholder, .data__item .m-textarea::-moz-placeholder {
+  line-height: 56px;
+}
+
+.data__item .m-field:-moz-placeholder, .data__item .m-textarea:-moz-placeholder {
+  line-height: 56px;
+}
+
+.data__item .m-field:-ms-input-placeholder, .data__item .m-textarea:-ms-input-placeholder {
+  line-height: 56px;
+}
+
 @media screen and (max-width: 599px) {
   .data__item {
     width: 100%;
@@ -12500,6 +12548,22 @@ a {
     margin-top: 20px;
     width: calc(100% - 40px);
   }
+}
+
+.modal-2 .m-field::-webkit-input-placeholder, .modal-2 .m-textarea::-webkit-input-placeholder {
+  line-height: 56px;
+}
+
+.modal-2 .m-field::-moz-placeholder, .modal-2 .m-textarea::-moz-placeholder {
+  line-height: 56px;
+}
+
+.modal-2 .m-field:-moz-placeholder, .modal-2 .m-textarea:-moz-placeholder {
+  line-height: 56px;
+}
+
+.modal-2 .m-field:-ms-input-placeholder, .modal-2 .m-textarea:-ms-input-placeholder {
+  line-height: 56px;
 }
 
 /*# sourceMappingURL=main.css.map */
